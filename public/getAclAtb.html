@@ -3,20 +3,70 @@
 <head>
     <title>getting users Info</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <div class="container my-container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="form-group form">
+                <form action="/getAcl" method="POST">
+
+                    <div class="col">
+                        <input type="text" class="form-control" id="add" placeholder="Enter the address" name="address"
+                            style="text-align: center;"><br>
+                        <input type="text" class="form-control" id="src" placeholder="Enter the ressource"
+                            name="ressource" style="text-align: center;"><br>
+
+                        <input type="submit" value="has right" class="btn bg-light btn-outline-primary btn-lg btn"
+                            name="submit">
+                        <input type="submit" value="exec right" class="btn bg-light btn-outline-primary btn-lg btn"
+                            name="submit">
+                        <input type="submit" value="read right" class="btn bg-light btn-outline-primary btn-lg btn"
+                            name="submit">
+                        <input type="submit" value="write right" class="btn bg-light btn-outline-primary btn-lg btn"
+                            name="submit">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
         <div class="form-group form">
             <form action="/getAcl" method="POST">
-                <input type="text" class="form-control" id="add" placeholder="Enter the address" name="address">
-                <input type="text" class="form-control" id="src" placeholder="Enter the ressource" name="ressource">
-                <input type="submit" value="submit" class="btn bg-light btn-outline-primary btn-lg btn" name="submit">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="add" placeholder="Enter the address" name="address"><br>
+                        <input type="text" class="form-control" id="rught" placeholder="Enter the right type"
+                            name="type"><br>
+                        <input type="text" class="form-control" id="ress" placeholder="Enter the ressource"
+                            name="ressource"><br>
+                        <input type="submit" value="has right" class="btn bg-light btn-outline-primary btn-lg btn"
+                            name="submit">
+                    </div>
+            <!-- </form>
+            <form action="/getAcl" method="POST"> -->
+                <div class="col-6">
+                    <input type="text" class="form-control" id="add" placeholder="Enter the address" name="address">
+                    <input type="submit" value="req accounts" class="btn bg-light btn-outline-primary btn-lg btn"
+                        name="submit"><br><br>
+                    <input type="submit" value='owner' class="btn bg-light btn-outline-primary btn-lg btn"
+                        name="submit"><br><br>
+                    <input type="submit" value="count list" class="btn bg-light btn-outline-primary btn-lg btn"
+                        name="submit">
+                </div>
+
             </form>
         </div>
+    </div>
     </div>
 
 </body>

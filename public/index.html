@@ -3,22 +3,23 @@
 <head>
 	<title>ACL</title>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body> 
+<body>
 	<div class="container my-container">
-	<form action="/getAcl"   method="GET">
-		
-		<input type="submit" class="btn btn-outline-primary" name="getAcl" value="get users information"><br>
-	</form>
-	<form action="/setAcl"   id="add" placeholder="Enter the address" method="GET">
 
-		<input type="submit" class="btn btn-outline-primary" name="setAcl" value="add user"><br>
-	</form>
-</div>
+		<form action="/getAcl" method="GET">
 
+			<input type="submit" class="btn btn-outline-primary" name="getAcl" value="get users information"><br>
+		</form>
+		<form action="/setAcl" id="add" placeholder="Enter the address" method="GET">
+
+			<input type="submit" class="btn btn-outline-primary" name="setAcl" value="add user"><br>
+		</form>
+
+	</div>
 </body>
 
 </html>

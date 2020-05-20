@@ -19,25 +19,25 @@ router.post('/', function(req,res) {
 });
 
 
-  var abi = '';  // contract's abi
-  var addr = '' ; // contract's address
+  // var abi = '';  // contract's abi
+  // var addr = '' ; // contract's address
 
-  var abiErc = '' ; // ERC721's abi
-  var addrErc = '' ; // ERC721's address
+  // var abiErc = '' ; // ERC721's abi
+  // var addrErc = '' ; // ERC721's address
 
 
-  var aclContract = new web3.eth.Contract(abi, addr);
-  var ercContract = new web3.eth.Contract(abiErc, addrErc);
+  // var aclContract = new web3.eth.Contract(abi, addr);
+  // var ercContract = new web3.eth.Contract(abiErc, addrErc);
 
 
  
-  aclContrac.methods.setAclAtb(user.address,user.read, user.write,user.exec, user.ressource).send()
-  .then(consol.log)
-  .then(aclContract.methods.countList().call(function(error,result){
-    consol.log('countlist');
-    consol.log(result);
-    ercContract.methods._mint(address,result-1).call();
-  }));
+  // aclContrac.methods.setAclAtb(user.address,user.read, user.write,user.exec, user.ressource).send()
+  // .then(consol.log)
+  // .then(aclContract.methods.countList().call(function(error,result){
+  //   consol.log('countlist');
+  //   consol.log(result);
+  //   ercContract.methods._mint(address,result-1).call();
+  // }));
   
 
 
